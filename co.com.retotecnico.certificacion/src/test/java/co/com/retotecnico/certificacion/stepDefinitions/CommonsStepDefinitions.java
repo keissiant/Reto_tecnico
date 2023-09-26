@@ -12,22 +12,12 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
 public class CommonsStepDefinitions {
 
-    @Before
-    public void prepareStage() {
-        OnStage.setTheStage(new OnlineCast());
-
-    }
-
     @Managed
+    static
     WebDriver myDriver;
-
-    //Actor Juan Camilo;
-
     @Before
-    public void setUp(){
-
+    public static void setUp(){
         OnStage.setTheStage(Cast.ofStandardActors());
-        theActorCalled("Andres").can(BrowseTheWeb.with(myDriver));
+        theActorCalled("Keissiantid").can(BrowseTheWeb.with(myDriver));
     }
-
 }

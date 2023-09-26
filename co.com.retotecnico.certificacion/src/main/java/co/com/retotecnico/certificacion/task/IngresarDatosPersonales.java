@@ -15,6 +15,7 @@ import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isClic
 
 public class IngresarDatosPersonales implements Task {
 
+
     Random numAleatorio = new Random();
     int numero = numAleatorio.nextInt(75-2+1) + 3;
     private String correo = "correoandres" + numero + "@gmail.com";
@@ -37,7 +38,6 @@ public class IngresarDatosPersonales implements Task {
                 Click.on(DESPLEGAR_LISTA_DE_ANIOS),
                 Click.on(ANIO_DE_LA_LISTA.of("1990")),
                 Click.on(BTN_NEXT_LOCATION_SIGUIENTE));
-
     }
 
     public static IngresarDatosPersonales enPrimerPaso(){
