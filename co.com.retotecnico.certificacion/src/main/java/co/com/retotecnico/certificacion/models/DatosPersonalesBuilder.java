@@ -13,6 +13,7 @@ public class DatosPersonalesBuilder {
     private String anio;
     private String city;
     private String codPostal;
+    private String pais;
     private String pass;
 
     public String getFirstName() {
@@ -30,6 +31,9 @@ public class DatosPersonalesBuilder {
     }
     public String getCodPostal() {
         return codPostal;
+    }
+    public String getPais() {
+        return pais;
     }
     public String getPass() {return pass; }
 
@@ -67,6 +71,10 @@ public class DatosPersonalesBuilder {
 
     public DatosPersonalesBuilder codPostal (List<Map<String, String>> datos) {
         this.codPostal = datos.get(0).get("codPostal");
+        return this;}
+
+    public DatosPersonalesBuilder pais (List<Map<String, String>> datos) {
+        this.pais = datos.get(0).get("pais");
         return this;}
 
     public DatosPersonalesBuilder pass (List<Map<String, String>> datos) {

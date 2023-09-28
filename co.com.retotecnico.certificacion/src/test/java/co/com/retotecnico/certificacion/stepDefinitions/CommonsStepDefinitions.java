@@ -4,7 +4,6 @@ import cucumber.api.java.Before;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.Cast;
 import net.serenitybdd.screenplay.actors.OnStage;
-import net.serenitybdd.screenplay.actors.OnlineCast;
 import net.thucydides.core.annotations.Managed;
 import org.openqa.selenium.WebDriver;
 
@@ -18,6 +17,6 @@ public class CommonsStepDefinitions {
     @Before
     public static void setUp(){
         OnStage.setTheStage(Cast.ofStandardActors());
-        theActorCalled("Keissiantid").can(BrowseTheWeb.with(myDriver));
+        theActorCalled("Keissiant").can(BrowseTheWeb.with(myDriver));
     }
 }

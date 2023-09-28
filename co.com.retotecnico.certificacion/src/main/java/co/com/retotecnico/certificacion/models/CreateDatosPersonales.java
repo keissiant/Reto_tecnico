@@ -10,6 +10,7 @@ public class CreateDatosPersonales {
     private final String anio;
     private final String city;
     private final String codPostal;
+    private final String pais;
     private final String pass;
 
     public CreateDatosPersonales(DatosPersonalesBuilder builder) {
@@ -21,6 +22,7 @@ public class CreateDatosPersonales {
         this.anio = builder.getAnio();
         this.city = builder.getCity();
         this.codPostal = builder.getCodPostal();
+        this.pais = builder.getPais();
         this.pass = builder.getPass();
     }
 
@@ -33,6 +35,7 @@ public class CreateDatosPersonales {
     public String getAnio() {  return anio;}
     public String getCity() { return city;}
     public String getCodPostal() { return codPostal;}
+    public String getPais() { return pais;}
     public String getPass() {  return pass;}
 
 }
